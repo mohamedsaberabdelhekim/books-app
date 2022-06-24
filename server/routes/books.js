@@ -99,7 +99,7 @@ router.get("/delete/:id", (req, res, next) => {
    * ADD CODE HERE *
    *****************/
   book.deleteOne({ _id: req.params.id }, function (err, resl) {
-   
+   //
     res.redirect("/books/");
   });
 });
